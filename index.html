@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101426">
+<title>CAMSHIELD | Camera Privacy</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar"><a class="brand" href="#"><span class="logo">◈</span><span>CAM<span class="pink">SHIELD</span><small>CAMERA PRIVACY</small></span></a><div class="top-right"><span class="privacy"><i></i> Privacy-first demo</span><button id="language">தமிழ் / EN</button></div></header>
+<main class="wrap">
+<section class="hero"><div><div class="eyebrow">YOUR DEVICE. YOUR CHOICE.</div><h1 id="heroTitle">Your camera.<br><span>Your control.</span></h1><p id="heroText">Understand when this website uses your camera, review test sessions, and stay in control.</p><div class="tags"><span>✓ Clear permission</span><span>✓ Easy controls</span><span>✓ No video uploads</span></div></div><div class="hero-art"><div class="orbit o1"></div><div class="orbit o2"></div><div class="shield"><div class="lens"></div></div><span class="chip chip1">● PRIVACY ON</span><span class="chip chip2">✦ YOU ARE IN CONTROL</span></div></section>
+<section class="grid">
+<article class="panel main-panel"><div class="panel-head"><div><small>LIVE STATUS</small><h2 id="statusHeading">Camera status</h2></div><span id="statusMark" class="mark">◉</span></div>
+<div class="status"><div class="camera-icon">▣</div><div><strong id="status">Not active</strong><p id="statusSub">Camera has not been started by this page.</p></div></div>
+<div class="preview" id="preview"><video id="video" autoplay playsinline muted></video><div id="placeholder"><span>◎</span><strong id="previewTitle">Your preview appears here</strong><p id="previewText">Nothing starts until you press the button below.</p></div><b id="liveBadge">● CAMERA LIVE</b></div>
+<div class="buttons"><button id="start" class="primary">◎ <span id="startText">Test my camera</span> <b>↗</b></button><button id="stop" class="stop" disabled>■ <span id="stopText">Stop camera</span></button></div><p class="fine" id="permission">Your browser will ask for permission. Video stays in your browser and is not uploaded.</p><div id="message" role="status" hidden></div></article>
+<div class="side">
+<article class="panel"><div class="panel-head"><div><small>PRIVACY ALERTS</small><h2 id="alertsHeading">Stay informed</h2></div><span class="round">♢</span></div><div class="alert"><div class="app-icon">CS</div><div class="alert-copy"><strong id="alertTitle">Camera activity detected</strong><p id="alertText">When you start the camera test, an alert appears here.</p><small id="alertTime">No recent activity</small></div><i id="alertDot"></i></div><p class="note" id="disclaimer">This prototype reports activity on this website only, not other apps on your device.</p></article>
+<article class="panel"><div class="panel-head"><div><small>RECENT ACTIVITY</small><h2 id="historyHeading">Session history</h2></div><button id="clear" class="clear">Clear</button></div><div id="history" class="history"><div class="empty"><span>◷</span><strong id="emptyTitle">Nothing here yet</strong><p id="emptyText">Your camera test sessions will appear here.</p></div></div><p class="footnote" id="footnote">Only this website's test sessions are listed.</p></article>
+</div></section>
+<section class="promise"><span>✦</span><div><strong id="promiseTitle">A clear privacy promise</strong><p id="promiseText">CAMSHIELD records camera sessions started on this page. A website cannot independently detect when another app uses your camera. Device-wide monitoring needs a separate app with platform-supported access.</p></div></section>
+<footer><span>◈ CAMSHIELD <em>· Camera Privacy Prototype</em></span><span>Built for safer digital habits <b>♥</b></span></footer>
+</main><div id="toast" class="toast" role="status"></div><script src="app.js"></script>
+</body></html>
